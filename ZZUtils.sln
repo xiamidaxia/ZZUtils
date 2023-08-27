@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZUtils", "ZZUtils/ZZUtils.csproj", "{3D18B45C-7AE4-4F71-AA7B-CA0F9063177C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZUtilsTest", "ZZUtilsTest\ZZUtilsTest.csproj", "{F624662B-3790-4011-939C-C5690F4E57D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D18B45C-7AE4-4F71-AA7B-CA0F9063177C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D18B45C-7AE4-4F71-AA7B-CA0F9063177C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D18B45C-7AE4-4F71-AA7B-CA0F9063177C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D18B45C-7AE4-4F71-AA7B-CA0F9063177C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F624662B-3790-4011-939C-C5690F4E57D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F624662B-3790-4011-939C-C5690F4E57D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F624662B-3790-4011-939C-C5690F4E57D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F624662B-3790-4011-939C-C5690F4E57D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
