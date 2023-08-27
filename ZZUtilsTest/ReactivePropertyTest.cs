@@ -2,7 +2,7 @@ using System;
 using ZZUtils;
 using NUnit.Framework;
 
-namespace ZZUtilsTests
+namespace ReactivePropertyTest
 {
     public class ReactivePropertyTest
     {

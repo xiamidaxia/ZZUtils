@@ -4,16 +4,13 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{F624662B-3790-4011-939C-C5690F4E57D0}</ProjectGuid>
-        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <ProjectGuid>{99DC2F42-1362-416C-9996-DFF69F1A41EF}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>ZZUtilsTest</RootNamespace>
-        <AssemblyName>ZZUtilsTest</AssemblyName>
+        <RootNamespace>Learn</RootNamespace>
+        <AssemblyName>Learn</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
-        <LangVersion>9</LangVersion>
-        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,25 +32,29 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+          <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="DisposableTest.cs" />
-        <Compile Include="EventTest.cs" />
-        <Compile Include="ReactivePropertyTest.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Src\Attribute\AttributeTest.cs" />
+        <Compile Include="Src\Invoke\InvokeTest.cs" />
+        <Compile Include="Src\Others\OthersTest.cs" />
+        <Compile Include="Src\Reflection\ReflectionTest.cs" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\ZZUtils/ZZUtils.csproj">
-        <Project>{3d18b45c-7ae4-4f71-aa7b-ca0f9063177c}</Project>
-        <Name>ZZUtils</Name>
-      </ProjectReference>
+      <Content Include="Docs\img.png" />
+      <Content Include="Docs\Assembly.md" />
+      <Content Include="Docs\Generic.md" />
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="NUnit" Version="3.5.0" />
+      <None Include="packages.config" />
+      <None Include="Properties\App.config" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

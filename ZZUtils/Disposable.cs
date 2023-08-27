@@ -1,26 +1,25 @@
 using System;
+using JetBrains.Annotations;
 
 namespace ZZUtils
 {
-    /// <summary>Provides a mechanism for releasing unmanaged resources.</summary>
-    public interface IDisposable
-    {
-        /// <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
-        void Dispose();
-    }
     /// <summary>
     /// var Action action = () => {};
     /// var dispose = Disposable.create(action);
     /// </summary>
-    public struct Disposable: IDisposable
+    public class Disposable: IDisposable
     {
-        private Action mDispose { get; set; }
+        [CanBeNull] private Action mDispose { get; set; }
 
         public static IDisposable Create(Action dispose)
         {
             return new Disposable(dispose);
         }
-        
+
+        public Disposable()
+        {
+        }
+
         public Disposable(Action dispose)
         {
             mDispose = dispose;

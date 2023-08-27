@@ -4,16 +4,14 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{F624662B-3790-4011-939C-C5690F4E57D0}</ProjectGuid>
-        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <ProjectGuid>{16C2D220-EF4A-4798-81C7-0C87F1153D48}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>ZZUtilsTest</RootNamespace>
-        <AssemblyName>ZZUtilsTest</AssemblyName>
+        <RootNamespace>ZZIOC</RootNamespace>
+        <AssemblyName>ZZIOC</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>9</LangVersion>
-        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -39,21 +37,19 @@
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
+        <Reference Include="UnityEngine">
+            <HintPath>/Applications/Unity/Hub/Editor/2022.3.0f1c1/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="DisposableTest.cs" />
-        <Compile Include="EventTest.cs" />
-        <Compile Include="ReactivePropertyTest.cs" />
+        <Compile Include="IOCContainer.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\ZZUtils/ZZUtils.csproj">
+      <ProjectReference Include="..\ZZUtils\ZZUtils.csproj">
         <Project>{3d18b45c-7ae4-4f71-aa7b-ca0f9063177c}</Project>
         <Name>ZZUtils</Name>
       </ProjectReference>
-    </ItemGroup>
-    <ItemGroup>
-      <PackageReference Include="NUnit" Version="3.5.0" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

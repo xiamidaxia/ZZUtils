@@ -2,7 +2,7 @@ using System;
 using ZZUtils;
 using NUnit.Framework;
 
-namespace ZZUtilsTests
+namespace EventTest
 {
     public class EventTest
     {
