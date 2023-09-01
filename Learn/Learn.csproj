@@ -45,6 +45,7 @@
         <Compile Include="Src\Attribute\AttributeTest.cs" />
         <Compile Include="Src\Invoke\InvokeTest.cs" />
         <Compile Include="Src\Others\OthersTest.cs" />
+        <Compile Include="Src\Others\ReferenceTest.cs" />
         <Compile Include="Src\Others\Serialize.cs" />
         <Compile Include="Src\Reflection\ReflectionTest.cs" />
     </ItemGroup>
