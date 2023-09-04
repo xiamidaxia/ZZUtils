@@ -11,7 +11,6 @@ namespace Learn.Others
     [Serializable]
     public class SomeData
     {
-        [NonSerialized]
         protected string mName = "private";
         public string Name = "";
         public int Age { get; set; }

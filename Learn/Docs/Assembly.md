@@ -40,3 +40,8 @@ i = (int)oValue;
 4. 越是最近分配越是会被回收
 
 - 大对象策略: 如果大于某个对象的单独管理，用的链标形式（会有碎片）
+
+## MSIL
+
+- https://www.gxlsystem.com/diannaowenti-383740.html
+- https://zhuanlan.zhihu.com/p/20525151

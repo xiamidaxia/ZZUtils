@@ -4,14 +4,14 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{16C2D220-EF4A-4798-81C7-0C87F1153D48}</ProjectGuid>
+        <ProjectGuid>{DDFF0D19-FFE4-4C4A-8F3F-165EF23E7E1E}</ProjectGuid>
+        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>ZZIOC</RootNamespace>
-        <AssemblyName>ZZIOC</AssemblyName>
+        <RootNamespace>ZZIOCTest</RootNamespace>
+        <AssemblyName>ZZIOCTest</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
-        <LangVersion>9</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,21 +37,18 @@
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
-        <Reference Include="UnityEngine">
-            <HintPath>/Applications/Unity/Hub/Editor/2022.3.0f1c1/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+        <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+            <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Interfaces.cs" />
-        <Compile Include="Internal\CompilationContext.cs" />
-        <Compile Include="Internal\Meta.cs" />
-        <Compile Include="IOCContainer.cs" />
+        <Compile Include="Tests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\ZZUtils\ZZUtils.csproj">
-        <Project>{3d18b45c-7ae4-4f71-aa7b-ca0f9063177c}</Project>
-        <Name>ZZUtils</Name>
+      <ProjectReference Include="..\ZZIOC\ZZIOC.csproj">
+        <Project>{16c2d220-ef4a-4798-81c7-0c87f1153d48}</Project>
+        <Name>ZZIOC</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

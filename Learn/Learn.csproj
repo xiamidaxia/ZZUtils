@@ -53,6 +53,7 @@
       <Content Include="Docs\img.png" />
       <Content Include="Docs\Assembly.md" />
       <Content Include="Docs\Generic.md" />
+      <Content Include="Docs\Unity.md" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

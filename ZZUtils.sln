@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn", "Learn\Learn.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroResolver", "MicroResolver\MicroResolver.csproj", "{4645752F-3038-47E9-A9BF-871D4263959F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZIOCTest", "ZZIOCTest\ZZIOCTest.csproj", "{DDFF0D19-FFE4-4C4A-8F3F-165EF23E7E1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,5 +40,9 @@ Global
 		{4645752F-3038-47E9-A9BF-871D4263959F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4645752F-3038-47E9-A9BF-871D4263959F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4645752F-3038-47E9-A9BF-871D4263959F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDFF0D19-FFE4-4C4A-8F3F-165EF23E7E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDFF0D19-FFE4-4C4A-8F3F-165EF23E7E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDFF0D19-FFE4-4C4A-8F3F-165EF23E7E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDFF0D19-FFE4-4C4A-8F3F-165EF23E7E1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
