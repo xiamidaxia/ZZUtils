@@ -23,3 +23,13 @@ Sum(3)
 - where T: new() // 无参数构造函数, 可以使用 new T()
 - default(T): // 获取默认值
 ```
+## 范型的协变和逆变
+
+https://blog.csdn.net/zp19860529/article/details/107712557
+- 协变：父变量可以传入子变量，范型里用 out 表示，可以解决一个问题就是数组问题
+- 逆变：子变量可以传入父变量，范型用 in 表示（不常用）
+```
+Fruit fruit = apple // 里氏替换原则，合法的
+List<Fruit> fruits = new List<Apple>() // 不合法，Apple 虽然是子类，但List<Fruit> 和 List<Apple> 其实是两个类
+interface IEnumerable<out T> {}
+```

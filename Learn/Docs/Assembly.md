@@ -24,7 +24,7 @@ string str3 = "abc2"
 object.ReferenceEquals(str, str3) // 享元，为true，因为 CLR 内存查找会查找相同值, 所以字符串是不可变
 
 ```
-- 装箱拆箱: 指内存的拷贝动作，内存堆栈来回传递，通常因为 object 
+- 装箱拆箱: 指内存的拷贝动作，内存堆栈来回传递，通常因为 object , 未重载的： ToString、Equals、GetHashCode、GetType(使用typeof替代就不会) 都会带来装箱
 ```csharp
 int i = 3;
 object oValue = i;

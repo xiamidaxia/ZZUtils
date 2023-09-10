@@ -44,15 +44,19 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Src\Attribute\AttributeTest.cs" />
         <Compile Include="Src\Invoke\InvokeTest.cs" />
+        <Compile Include="Src\Others\EqualityTest.cs" />
         <Compile Include="Src\Others\OthersTest.cs" />
         <Compile Include="Src\Others\ReferenceTest.cs" />
         <Compile Include="Src\Others\Serialize.cs" />
         <Compile Include="Src\Reflection\ReflectionTest.cs" />
+        <Compile Include="Src\Thread\ThreadTest.cs" />
     </ItemGroup>
     <ItemGroup>
+      <Content Include="Docs\base.md" />
       <Content Include="Docs\img.png" />
       <Content Include="Docs\Assembly.md" />
       <Content Include="Docs\Generic.md" />
+      <Content Include="Docs\Thread.md" />
       <Content Include="Docs\Unity.md" />
     </ItemGroup>
     <ItemGroup>
