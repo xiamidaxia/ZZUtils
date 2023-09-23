@@ -53,6 +53,7 @@
       </ProjectReference>
     </ItemGroup>
     <ItemGroup>
+      <PackageReference Include="Dumpify" Version="0.6.0" />
       <PackageReference Include="NUnit" Version="3.5.0" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
