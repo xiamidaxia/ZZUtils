@@ -80,6 +80,9 @@
       <Content Include="Docs\Generic.md" />
       <Content Include="Docs\Thread.md" />
       <Content Include="Docs\Unity.md" />
+      <Content Include="Docs\学习路径.md" />
+      <Content Include="Docs\插件.md" />
+      <Content Include="Docs\面试.md" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

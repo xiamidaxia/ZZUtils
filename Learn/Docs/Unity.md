@@ -55,7 +55,7 @@ float distance = Vector3.Distace(target, transform.position); // 效率很低, �
 if (distance > 2.0f) { }
 
 flow distance2 = Vector3.SqrMagnitud(target, transform.position) // 求平方，这样就少了一个开平计算
-if (distance > 2.0f * 2) {}
+if (distance > 2.0f ^ 2) {}
 ```
 
 ## 性能
